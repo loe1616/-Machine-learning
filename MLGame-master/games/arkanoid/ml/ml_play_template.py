@@ -26,6 +26,9 @@ def ml_loop():
     # filename = "C:\\Users\\loe_lin\\Documents\\-Machine-learning\\MLGame-master\\games\\arkanoid\\ml\\knn_example.sav"
     # model = pickle.load(open(filename,'rb'))
     comm.ml_ready()
+    
+    
+    
     ball_position_history = []
 
     # 3. Start an endless loop.
@@ -44,7 +47,7 @@ def ml_loop():
 
             while ball_destination < 0 or ball_destination > 200:
                 if ball_destination >200:
-                    ball_destination = 400-ball_destination
+                    ball_destination = 400 - ball_destination
                 else:
                     ball_destination =  - ball_destination
 
